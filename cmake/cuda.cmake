@@ -25,7 +25,7 @@ if (CUDA_VERSION_MAJOR VERSION_GREATER_EQUAL "11")
     if (CUDA_VERSION_MINOR VERSION_GREATER_EQUAL "1")
         set(_NVCC_FLAGS "${_NVCC_FLAGS} -gencode arch=compute_86,code=sm_86")
     endif ()
-    # add sm_86 to compile on Orin
+    # add sm_87 to compile on Orin
     if (CUDA_VERSION_MINOR VERSION_GREATER_EQUAL "4")
         set(_NVCC_FLAGS "${_NVCC_FLAGS} -gencode arch=compute_87,code=sm_87")
     endif ()
